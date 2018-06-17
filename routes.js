@@ -60,8 +60,6 @@ router.post('/customer/add/', function(req, res){
       }
       
       )
-      
-    
   });
   
 });
