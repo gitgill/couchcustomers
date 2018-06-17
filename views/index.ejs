@@ -1,0 +1,23 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/public/css/styles.css">
+</head>
+
+<h3>Customers</h3>
+
+ <p><a href="/customer/addpage/"><button>add customer</button></a></p> 
+
+
+
+
+<% customers.forEach(function(customer){%>
+ 
+  <div class="row">
+    <div class="namecol" ><%= customer.value.name %></div>
+    <div class="emailcol"><%= customer.value.email %></div>
+    <div class="buttoncol"><a href="/customer/confirmdelete/<%= customer.key %>"><button>delete</button></a></div>
+    <div class="buttoncol"><a href="/customer/editpage/<%= customer.key %>"><button>edit</button></a></div>
+  </div>
+
+<% }); %>
+
+

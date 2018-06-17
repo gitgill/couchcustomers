@@ -1,0 +1,16 @@
+  .row {
+    width: 800px;
+    height: 30px;
+  }
+  
+  .namecol,
+  .emailcol {
+    float: left;
+    width: 200px;
+  }
+
+  
+  .buttoncol{
+    float: left;
+    width: 80px;
+  }

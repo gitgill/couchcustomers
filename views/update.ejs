@@ -1,0 +1,12 @@
+<h3>Update Customer Record</h3>
+
+<form method="post" action = "/customer/update/<%= id %>">
+  <input type="text" name="name" value="<%= name %>">
+  <input type="text" name="email" value="<%= email %>">
+  <input type="hidden" name="rev" value="<%= rev %>">
+  <h4>Save these changes?</h4>
+  <div>
+    <a href="/"><button>No</button></a>  <input type="submit" value="Yes">
+  </div>  
+</form>  
+
